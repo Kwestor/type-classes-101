@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=1024, user-scalable=no">
 
-  <title>Your deck.js Presentation</title>
+  <title>Type classes 101</title>
 
   <!-- Required stylesheet -->
   <link rel="stylesheet" media="screen" href="core/deck.core.css">
@@ -30,49 +30,134 @@
   <script src="modernizr.custom.js"></script>
 </head>
 <body>
-  <div class="deck-container">
+<div class="deck-container deck-scale">
 
-    <!-- Begin slides. Just make elements with a class of slide. -->
+  <!-- Begin slides. Just make elements with a class of slide. -->
 
-    <section class="slide">
-      <h1>Slide</h1>
-    </section>
+  <section class="slide">
+    <h1>Type classes 101</h1>
+  </section>
 
-    <section class="slide">
-      <h1>Content</h1>
-    </section>
+  <section class="slide">
+    <h2>About me</h2>
+  </section>
 
-    <section class="slide">
-      <h1>Here</h1>
-    </section>
+  <section class="slide">
+    <h1>Questions</h1>
+  </section>
 
-    <!-- End slides. -->
+  <section class="slide">
+    <h2>Problem</h2>
+  </section>
 
-    <!-- Begin extension snippets. Add or remove as needed. -->
+  <section class="slide">
+    <h2>Solutions</h2>
+  </section>
 
-    <!-- deck.navigation snippet -->
-    <div aria-role="navigation">
-      <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
-      <a href="#" class="deck-next-link" title="Next">&#8594;</a>
-    </div>
+  <section class="slide">
+    <h2>inheritance</h2>
+  </section>
 
-    <!-- deck.status snippet -->
-    <p class="deck-status" aria-role="status">
-      <span class="deck-status-current"></span>
-      /
-      <span class="deck-status-total"></span>
-    </p>
+  <section class="slide">
+    <h2>structural/duck typing</h2>
+  </section>
 
-    <!-- deck.goto snippet -->
-    <form action="." method="get" class="goto-form">
-      <label for="goto-slide">Go to slide:</label>
-      <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
-      <datalist id="goto-datalist"></datalist>
-      <input type="submit" value="Go">
-    </form>
+  <section class="slide">
+    <h2>static/extension methods</h2>
+  </section>
 
-    <!-- End extension snippets. -->
+  <section class="slide">
+    <h2>Solutions - summary</h2>
+  </section>
+
+  <section class="slide">
+    <h1>Other approach</h1>
+  </section>
+
+  <section class="slide">
+    <h2>Type classes - example</h2>
+
+    // in haskell
+  </section>
+
+  <section class="slide">
+    <h2>Type classes - definition</h2>
+  </section>
+
+  <section class="slide">
+    <h1>They are here!</h1>
+  </section>
+
+  <section class="slide">
+    <h2>In Haskell</h2>
+  </section>
+
+  <section class="slide">
+    <h2>In Scala</h2>
+  </section>
+
+  <section class="slide">
+    <h2>Side note about implicits</h2>
+  </section>
+
+  <section class="slide">
+    <h2>In Java?</h2>
+  </section>
+
+  <section class="slide">
+    <h1>Fun stuff</h1>
+  </section>
+
+  <section class="slide">
+    <h2>Changing result type</h2>
+  </section>
+
+  <section class="slide">
+    <h2>Recursion!</h2>
+  </section>
+
+  <section class="slide">
+    <h2>Summary</h2>
+  </section>
+
+  <section class="slide">
+    <h2>Resources</h2>
+    <ul>
+      <li></li>
+    </ul>
+  </section>
+
+  <section class="slide">
+    <h1>Questions?</h1>
+  </section>
+
+  <!-- End slides. -->
+
+  <!-- Begin extension snippets. Add or remove as needed. -->
+
+  <!-- deck.navigation snippet -->
+  <div aria-role="navigation">
+    <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+    <a href="#" class="deck-next-link" title="Next">&#8594;</a>
   </div>
+
+  <!-- deck.status snippet -->
+  <p class="deck-status" aria-role="status">
+    <span class="deck-status-current"></span>
+    /
+    <span class="deck-status-total"></span>
+  </p>
+
+  <!-- deck.goto snippet -->
+  <form action="." method="get" class="goto-form">
+    <label for="goto-slide">Go to slide:</label>
+    <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+    <datalist id="goto-datalist"></datalist>
+    <input type="submit" value="Go">
+  </form>
+
+  <!-- End extension snippets. -->
+</div>
 
 <!-- Required JS files. -->
 <script src="jquery.min.js"></script>
@@ -87,7 +172,7 @@
 
 <!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>
-  $(function() {
+  $(function () {
     $.deck('.slide');
   });
 </script>
