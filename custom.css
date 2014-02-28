@@ -1,0 +1,9 @@
+img.inline {
+	display: inline;
+	margin: 0 0 -5px 0;
+	max-height: 40px;
+}
+
+.codemirror-item {
+	margin: 15px 0;
+}
